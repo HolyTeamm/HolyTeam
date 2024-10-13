@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Little Love</title>
+    <link rel="icon" href="img/Logo1.png" type="image/x-icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+<style>
+    
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Logo1.png" style="width: 80px;">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="#parenting-classes" class="dropdown-item">Parenting Classes</a>
+                            <a href="#baby-growth-development" class="dropdown-item">Baby Growth & Development</a>
+                            <a href="#counseling" class="dropdown-item">Counseling</a>
+                        </div>
+                    </div>
+                    <a href="baby_equipment.html" class="nav-item nav-link">Baby Equipment</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/header.webp" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Welcome New Parent!!!</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Support service for new parents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/header2.jpeg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                        Welcome to Little Love! At Little Love, we understand that welcoming a new baby into your life is both a joyous and overwhelming experience. Our mission is to support new parents on this incredible journey by providing the knowledge, resources, and emotional guidance they need to feel confident and prepared.
+                                        <br><br>
+                                        We believe that being mentally prepared and informed is key to enjoying every precious moment with your little one. Our platform offers a wealth of articles, expert advice, and practical tips on everything from infant care to nurturing your mental well-being.
+                                        <br><br>
+                                        Whether you're a first-time parent or adding to your family, Little Love is here to help you navigate the challenges and celebrate the joys of parenthood. Together, let’s create a nurturing environment for you and your baby, filled with love, support, and understanding.
+                                        <br><br>
+                                        Join our community and embark on this beautiful adventure with Little Love!</p>
+                                    <a href="https://chat.whatsapp.com/JC1Ll2S87Cf4O7h56VfZHz" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Join Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Classes Start -->
+        <section id="parenting-classes">
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <h1 class="mb-3">Parenting Classes</h1>
+                        <p>Upcoming Class Schedule</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="" style="height: 280px;width: 280px;">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">Caring for Newborns</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0" src="img/sarah.jpeg" alt="" style="width: 45px; height: 45px;">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">	Dr. Sarah Johnson</h6>
+                                                <small>Doctor</small>
+                                            </div>
+                                        </div>
+                                        <a class="bg-success text-white rounded-pill py-2 px-3" href="https://forms.gle/12UbXxYHgyzNnEhU9">$99</a>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">Date:</h6>
+                                                <small>October 15th</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">Time:</h6>
+                                                <small>10 AM - 12 PM</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">Capacity:</h6>
+                                                <small>30</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="" style="height: 280px;width: 280px;">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">Postpartum Mental Health</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0" src="img/emily.jpeg" alt="" style="width: 45px; height: 45px;">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">Dr. Emily Collins</h6>
+                                                <small>Doctor</small>
+                                            </div>
+                                        </div>
+                                        <a class="bg-success text-white rounded-pill py-2 px-3" href="https://forms.gle/12UbXxYHgyzNnEhU9">$99</a>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">Date:</h6>
+                                                <small>October 22nd</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">Time:</h6>
+                                                <small>02 PM - 04 PM</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">Capacity:</h6>
+                                                <small>30</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle" src="img/classes-3.webp" alt="" style="height: 280px;width: 280px;">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">Infant Sleep Solutions</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0" src="img/michael.jpg" alt="" style="width: 45px; height: 45px;">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">Dr. Michael Lee</h6>
+                                                <small>Doctor</small>
+                                            </div>
+                                        </div>
+                                        <a class="bg-success text-white rounded-pill py-2 px-3" href="https://forms.gle/12UbXxYHgyzNnEhU9">$99</a>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">Date:</h6>
+                                                <small>October 29th</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">Time:</h6>
+                                                <small>9 AM - 11 AM</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">Capacity:</h6>
+                                                <small>30</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Classes End -->
+
+
+        <!-- baby development Start -->
+        <section id="baby-growth-development">
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <h1 class="mb-3">Baby Growth & Development</h1>
+                        <p>Track your baby's growth milestones and learn more about their physical and emotional development.</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="facility-item" id="three">
+                                <div class="facility-text bg-primary">
+                                    <h3 class="text-primary mb-3">0-3 Months</h3>
+                                    <p class="mb-0">During the first three months, your baby will begin to recognize faces and track movement with their eyes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="facility-item" id="four">
+                                <div class="facility-text bg-success">
+                                    <h3 class="text-success mb-3">4-6 Months</h3>
+                                    <p class="mb-0">By this stage, your baby may begin to roll over and start sitting with support.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="facility-item" id="seven">
+                                <div class="facility-text bg-warning">
+                                    <h3 class="text-warning mb-3">7-9 Months</h3>
+                                    <p class="mb-0">Your baby may begin to crawl and even start pulling themselves up to stand!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- baby growth End -->
+
+
+        <!-- Appointment Start -->
+        <section id="counseling">
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                    <h1 class="mb-4">Make Appointment</h1>
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control border-0" id="gname" name="gname" placeholder="Name">
+                                                    <label for="gname">Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control border-0" id="gmail" name="gmail" placeholder="Email">
+                                                    <label for="gmail">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="date" class="form-control border-0" id="date" name="date" placeholder="Preferred Date">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="time" class="form-control border-0" id="time" name="time" placeholder="Preferred Time">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                    <label for="message"></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary w-100 py-3" onclick="submitAppt()" >Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded" src="img/appointment.jpg" style="object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Appointment End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                    <p>Here is some testimoni from our client</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">After giving birth, I felt a little overwhelmed. However, guidance from a doctor makes all the difference. They provide clear information about postnatal care and how to take good care of the baby. With their support, I can enjoy little moments with my baby without worry</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Nessie</h3>
+                                <span>Teacher</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">The doctor's guidance means a lot to us. They not only explain the baby's health, but also provide practical tips for caring for him. Whenever we were confused, the doctor was always ready to answer our questions patiently. This gave us great confidence in taking on our new roles as parents.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Danu</h3>
+                                <span>Athlete</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">The presence of a caring doctor really helped us. They not only provide medical guidance, but also help us plan immunization schedules and provide dietary advice. We feel more at ease knowing we are in good hands. Their guidance made this journey much easier.</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Fikri</h3>
+                                <span>Bank Employees</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-sm-3">
+                <center><p>follow us on</p></center>
+                <div class="row justify-content-center">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/naurah_nur22607?t=N55EXhA8OpkQOUCoifkJiw&s=09"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/1LcfSJopEwavRZJe/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/littleloveofficiall/profilecard/?igsh=aDB5amdydWh3bzN2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row justify-content-center">
+                        &copy;2024 Little Love. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Modal content for baby growth -->
+
+        <div id="threeMonth" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close1">&times;</span>
+                <h5>What’s Happening at 0-3 Months?</h5>
+                <h6>Tummy Time Begins!</h6>
+                <p>It’s time for baby to work those abs! Tummy Time can start as soon as your little one comes home from the hospital.</p>
+                <h6>Baby Massage Helps with Bonding and Development</h6>
+                <p>Bonding is important in these early stages, because baby doesn’t know how to self-calm yet. We have an amazing bonding activity that will also help in many areas of baby’s development.</p>
+                <a href="https://pathways.org/growth-development/0-3-months/overview/" target="_blank"> more about 0-3 months development</a>
+            </div>
+        </div>
+
+        <div id="fourMonth" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close2">&times;</span>
+                <h5>What’s Happening at 4-6 Months?</h5>
+                <h6>Baby’s On A Roll!</h6>
+                <p>Baby will start rolling over around this age. Rolling is an important milestone—and can make Tummy Time more challenging!</p>
+                <h6>It’s time to start solids</h6>
+                <p>How do you know when baby should start eating solid foods? What should you give them first? What can’t they have? Watch and learn the answers to these questions—and more!</p>
+                <a href="https://pathways.org/growth-development/4-6-months/overview/" target="_blank"> more about 4-6 months development</a>
+            </div>
+        </div>
+
+        <div id="sevenMonth" class="modal">
+            <div class="modal-content">
+                <span class="close3">&times;</span>
+                <h5>What’s Happening at 7-9 Months?</h5>
+                <h6>You’ve Got a Crawler!</h6>
+                <p>Believe it or not, baby should begin crawling around this age. It’s an exciting milestone, but sometimes baby needs a little help—here’s how you can encourage crawling, and why it’s so important.</p>
+                <h6>It’s Time to Baby Proof</h6>
+                <p>Baby is on the move, so let the baby-proofing begin! As baby begins to crawl and stand, it’s important to keep them safe.</p>
+                <a href="https://pathways.org/growth-development/7-9-months/overview/" target="_blank"> more about 7-9 months development</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("threeMonth");
+        var modal2 = document.getElementById("fourMonth");
+        var modal3 = document.getElementById("sevenMonth");
+        
+        // Get the button that opens the modal
+        var mod1 = document.getElementById("three");
+        var mod2 = document.getElementById("four");
+        var mod3 = document.getElementById("seven");
+        
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        
+        // When the user clicks the button, open the modal 
+        mod1.onclick = function() {
+        modal1.style.display = "block";
+        }
+        mod2.onclick = function() {
+        modal2.style.display = "block";
+        }
+        mod3.onclick = function() {
+        modal3.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+        modal1.style.display = "none";
+        }
+        span2.onclick = function() {
+        modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+        modal3.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+
+        function submitAppt(){
+            var name = document.getElementById('gname').value;
+            var email = document.getElementById('gmail').value;  
+            alert("Hello " + name + " thank you for your appointment, we'll contact you soon via email. please check your email " + email);
+        }
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Little Love</title>
+    <link rel="icon" href="img/Logo1.png" type="image/x-icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Logo1.png" style="width: 80px;">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="index.html#parenting-classes" class="dropdown-item">Parenting Classes</a>
+                            <a href="index.html#baby-growth-development" class="dropdown-item">Baby Growth & Development</a>
+                            <a href="index.html#counseling" class="dropdown-item">Counseling</a>
+                        </div>
+                    </div>
+                    <a href="baby_equipment.html" class="nav-item nav-link">Baby Equipment</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/header.webp" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Welcome New Parent!!!</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Support service for new parents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/header2.jpeg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                        Welcome to Little Love! At Little Love, we understand that welcoming a new baby into your life is both a joyous and overwhelming experience. Our mission is to support new parents on this incredible journey by providing the knowledge, resources, and emotional guidance they need to feel confident and prepared.
+                                        <br><br>
+                                        We believe that being mentally prepared and informed is key to enjoying every precious moment with your little one. Our platform offers a wealth of articles, expert advice, and practical tips on everything from infant care to nurturing your mental well-being.
+                                        <br><br>
+                                        Whether you're a first-time parent or adding to your family, Little Love is here to help you navigate the challenges and celebrate the joys of parenthood. Together, let’s create a nurturing environment for you and your baby, filled with love, support, and understanding.
+                                        <br><br>
+                                        Join our community and embark on this beautiful adventure with Little Love!</p>
+                                    <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Join Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Baby Equipment Start -->
+        <section id="baby-equipment">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Baby Equipment</h1>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="img/baby carrier.jpg" alt="Baby Carrier" />
+                    <h3>Baby Carrier</h3>
+                    <p>Price: $25.00</p>
+                    <button class="buy-now" onclick="addToCart('Baby Carrier', 25.00)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/stroller.jpg" alt="Stroller" />
+                    <h3>Stroller</h3>
+                    <p>Price: $62.50</p>
+                    <button class="buy-now" onclick="addToCart('Stroller', 62.50)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/diaper bag.jpg" alt="Diaper Bag" />
+                    <h3>Diaper Bag</h3>
+                    <p>Price: $81.25</p>
+                    <button class="buy-now" onclick="addToCart('Diaper Bag', 81.25)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/portable nebulizer.jpg" alt="Portable Nebulizer" />
+                    <h3>Portable Nebulizer</h3>
+                    <p>Price: $31.25</p>
+                    <button class="buy-now" onclick="addToCart('Portable Nebulizer', 31.25)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/baby clothes.jpg" alt="Baby Clothes" />
+                    <h3>Baby Clothes</h3>
+                    <p>Price: $35.00</p>
+                    <button class="buy-now" onclick="addToCart('Baby Clothes', 35.00)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/baby pacifier.jpg" alt="Baby Pacifier" />
+                    <h3>Baby Pacifier</h3>
+                    <p>Price: $18.75</p>
+                    <button class="buy-now" onclick="addToCart('Baby Pacifier', 18.75)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/silicone bib.jpg" alt="Silicone Bib" />
+                    <h3>Silicone Bib</h3>
+                    <p>Price: $10.93</p>
+                    <button class="buy-now" onclick="addToCart('Silicone Bib', 10.93)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/dining set.jpg" alt="Dining Set" />
+                    <h3>Dining Set</h3>
+                    <p>Price: $9.37</p>
+                    <button class="buy-now" onclick="addToCart('Dining Set', 9.37)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/Bumbo Multi Seat.jpg" alt="Bumbo Multi Seat" />
+                    <h3>Bumbo Multi Seat</h3>
+                    <p>Price: $90.00</p>
+                    <button class="buy-now" onclick="addToCart('Bumbo Multi Seat', 90.00)">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="img/sock.jpg" alt="Sock Set" />
+                    <h3>Sock Set</h3>
+                    <p>Price: $7.95</p>
+                    <button class="buy-now" onclick="addToCart('Sock Set', 7.95)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <!-- Baby Equipment End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-sm-3">
+                <center><p>follow us on</p></center>
+                <div class="row justify-content-center">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row justify-content-center">
+                        &copy;2024 Little Love. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+    </div>
+    <div id="payment" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="background-image: url(../images/image.gif);"">
+            <span class="close">&times;</span>
+            <div id="payform">
+                <center><h3 class="mb-3">Fill Address Form</h3></center>
+                <!-- <form> -->
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="fname" name="fname" placeholder="First Name" required>
+                                <label for="fname">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="lname" name="lname" placeholder="Last Name" required>
+                                <label for="lname">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="country" name="country" placeholder="Country" required>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="town" name="town" placeholder="Town" required>
+                                <label for="town">Town</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+                                <label for="zipcode">Zip Code</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="address" name="address" placeholder="Address" required>
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="price" name="price" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" onclick="checkout()" >Proceed To Checkout</button>
+                        </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+            <div id="successpaid">
+                <center><div class="logo">✅</div></center>
+                <div id="col-md-8" style="padding-left: 30%; padding-top: 20px;">
+                    <p id="namapembeli"></p>
+                    <p id="bayarpembeli"></p>
+                    <p id="kodepembeli"></p>
+                    <p id="alamatpembeli"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    
+    <script>
+        // Get the modal
+        var payment = document.getElementById("payment");
+        var payform = document.getElementById("payform");
+        var successpaid = document.getElementById("successpaid");
+        var paymentsuccess = document.getElementById("paymentsuccess");
+        
+        // value form
+        var name;
+        
+        // Get the <span> element that closes the modal
+        var close = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        close.onclick = function() {
+        payment.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == payment) {
+                payment.style.display = "none";
+            }
+        }
+
+        function addToCart(productName, price) {
+            document.getElementById("price").style.display = "none";
+            document.getElementById("price").value=price;
+            payment.style.display = "block";
+            payform.style.display = "block";
+            successpaid.style.display = "none";
+        }
+
+        function checkout() {
+            payform.style.display = "none";
+            successpaid.style.display = "block";
+            name = document.getElementById("fname").value + " " + document.getElementById("lname").value;
+            document.getElementById("namapembeli").innerHTML=   "Name &emsp;&emsp;&emsp;&emsp;&emsp;: " + name;
+            document.getElementById("bayarpembeli").innerHTML=  "Amount &emsp;&emsp;&emsp;&emsp;: $" + document.getElementById("price").value;
+            document.getElementById("kodepembeli").innerHTML=   "payment code &emsp;: " + generateRandom16DigitNumber();
+            document.getElementById("alamatpembeli").innerHTML= "address &emsp;&emsp;&emsp;&emsp;: " + document.getElementById("address").value + ", " + document.getElementById("town").value + ", " + document.getElementById("country").value + ", " + document.getElementById("zipcode").value;
+        }
+
+        function generateRandom16DigitNumber() {
+            // Generate a random number between 0 and 9999999999999999
+            const randomNumber = Math.floor(Math.random() * 1e16); // 1e16 is 10^16
+            return String(randomNumber).padStart(16, '0'); // Pad with leading zeros if needed
+        }
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
